@@ -29,7 +29,7 @@ Currently still in the planning phase--I envision something roughly this:
 
     You can get data from:
 
-    Route: /data/:x/:id
+    Route: GET /data/:x/:id
     Where: :id Integer Id of the data to fetch
     Result:
         {x:1,y:'abc'}
@@ -51,7 +51,8 @@ Open ideas to settle before implementation:
 Other ideas:
  - For clojure (or any languages with similar functionality): look up relevant
    metadata of linked functions and embed it in the API (or some transformation
-   of it--maybe event automatically textualizing core.spec input descriptions)
+   of it--maybe event automatically textualizing clojure.spec input
+   descriptions)
  - in a similar vein, generally being able to statically extract some data from
    the implementation would be nice (statically typed languages could make this
    great, for example)
@@ -61,3 +62,9 @@ Other ideas:
    restclient-mode)
  - multiple backends for, say, JS: express Router form, purely functional form,
    etc.
+ - provide HTML output templates with fancy HTML to support trying the API in
+   browser, etc. (simulating too! (clojure.spec awesomeness could work here
+   too!))
+ - generate CLIENT implementations! (providing an ORM perhaps (well, without the
+   R))
+ - automatic semantic versioning (again, similar to elm or clojure.spec)
