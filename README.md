@@ -68,3 +68,4 @@ Other ideas:
  - generate CLIENT implementations! (providing an ORM perhaps (well, without the
    R))
  - automatic semantic versioning (again, similar to elm or clojure.spec)
+ - other sorts of arbitrarily exposing route nesting to the programming language
