@@ -47,6 +47,13 @@ Open ideas to settle before implementation:
   - What sort of file includes, if any
   - Specifying middleware (how to turn it into text, along with some related
     flags)
+  - Implementation types: it would be good to have an llvm-style
+    architecture with multiple distinct "frontends" that produce an
+    intermediate format (JSON?) that can be transformed into consumed
+    the doc outputs, OR loaded directly by programs.
+     - Cost for users: another build step, maybe inherently hurting repl-ness.
+       - Allow for programs to also specify the structure internally,
+         and then output the structure for the doc-generators to use
 
 Other ideas:
  - For clojure (or any languages with similar functionality): look up relevant
